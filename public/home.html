@@ -1,1 +1,17 @@
-this is home!
+<div class="row">
+    <div class="large-8 columns">
+        <div>note view</div>
+    </div>
+    <div class="large-4 columns">
+        <ul class="side-nav">
+            <li ng-repeat="gist in gists">
+            	<a href="#" ng-bind="::gist.description || '(no description)'"></a>
+            	<ul class="sub-nav">
+            		<li ng-repeat="(filename, fileprops) in gist.files">
+            			<a href="#" ng-bind="::filename"></a>
+            		</li>
+            	</ul>
+            </li>
+        </ul>
+    </div>
+</div>

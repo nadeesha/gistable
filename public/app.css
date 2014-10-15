@@ -1,0 +1,7 @@
+.side-nav .sub-nav li {
+	list-style-image: none;
+	font-size: 0.85em;
+	padding-left: 10px;
+	display: block;
+	opacity: 0.7;
+}
